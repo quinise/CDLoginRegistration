@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct CDLoginRegistrationApp: App {
+    let persistenceController = PersistenceController.shared
+    @State var signInSuccess = false
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

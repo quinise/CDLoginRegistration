@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		883EBF09265579D5004EEE38 /* CDLoginRegistrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883EBF08265579D5004EEE38 /* CDLoginRegistrationApp.swift */; };
-		883EBF0B265579D5004EEE38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883EBF0A265579D5004EEE38 /* ContentView.swift */; };
+		883EBF0B265579D5004EEE38 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883EBF0A265579D5004EEE38 /* LoginView.swift */; };
 		883EBF0D265579D6004EEE38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883EBF0C265579D6004EEE38 /* Assets.xcassets */; };
 		883EBF10265579D6004EEE38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883EBF0F265579D6004EEE38 /* Preview Assets.xcassets */; };
+		883EBF1826558651004EEE38 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883EBF1726558651004EEE38 /* RegisterView.swift */; };
+		883EBF1A26558CA9004EEE38 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883EBF1926558CA9004EEE38 /* SuccessView.swift */; };
+		883EBF1F26558E55004EEE38 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883EBF1E26558E55004EEE38 /* PersistenceController.swift */; };
+		883EBF242655A3F9004EEE38 /* LoginRegistrationModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 883EBF222655A3F9004EEE38 /* LoginRegistrationModel.xcdatamodeld */; };
+		888C34672655E8A5002B44AB /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C34662655E8A5002B44AB /* EditView.swift */; };
+		888C34692655E9A5002B44AB /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C34682655E9A5002B44AB /* UserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		883EBF05265579D5004EEE38 /* CDLoginRegistration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDLoginRegistration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883EBF08265579D5004EEE38 /* CDLoginRegistrationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDLoginRegistrationApp.swift; sourceTree = "<group>"; };
-		883EBF0A265579D5004EEE38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		883EBF0A265579D5004EEE38 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		883EBF0C265579D6004EEE38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		883EBF0F265579D6004EEE38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		883EBF11265579D6004EEE38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883EBF1726558651004EEE38 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		883EBF1926558CA9004EEE38 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		883EBF1E26558E55004EEE38 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		883EBF232655A3F9004EEE38 /* LoginRegistrationModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoginRegistrationModel.xcdatamodel; sourceTree = "<group>"; };
+		888C34662655E8A5002B44AB /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		888C34682655E9A5002B44AB /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				883EBF08265579D5004EEE38 /* CDLoginRegistrationApp.swift */,
-				883EBF0A265579D5004EEE38 /* ContentView.swift */,
+				883EBF222655A3F9004EEE38 /* LoginRegistrationModel.xcdatamodeld */,
+				883EBF2126558EBB004EEE38 /* Controllers */,
+				883EBF2026558E9A004EEE38 /* Views */,
 				883EBF0C265579D6004EEE38 /* Assets.xcassets */,
 				883EBF11265579D6004EEE38 /* Info.plist */,
 				883EBF0E265579D6004EEE38 /* Preview Content */,
@@ -67,6 +81,26 @@
 				883EBF0F265579D6004EEE38 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		883EBF2026558E9A004EEE38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				883EBF0A265579D5004EEE38 /* LoginView.swift */,
+				883EBF1726558651004EEE38 /* RegisterView.swift */,
+				883EBF1926558CA9004EEE38 /* SuccessView.swift */,
+				888C34682655E9A5002B44AB /* UserView.swift */,
+				888C34662655E8A5002B44AB /* EditView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		883EBF2126558EBB004EEE38 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				883EBF1E26558E55004EEE38 /* PersistenceController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				883EBF0B265579D5004EEE38 /* ContentView.swift in Sources */,
+				883EBF242655A3F9004EEE38 /* LoginRegistrationModel.xcdatamodeld in Sources */,
+				883EBF1A26558CA9004EEE38 /* SuccessView.swift in Sources */,
+				883EBF1826558651004EEE38 /* RegisterView.swift in Sources */,
+				888C34692655E9A5002B44AB /* UserView.swift in Sources */,
+				883EBF0B265579D5004EEE38 /* LoginView.swift in Sources */,
+				888C34672655E8A5002B44AB /* EditView.swift in Sources */,
+				883EBF1F26558E55004EEE38 /* PersistenceController.swift in Sources */,
 				883EBF09265579D5004EEE38 /* CDLoginRegistrationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +366,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		883EBF222655A3F9004EEE38 /* LoginRegistrationModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				883EBF232655A3F9004EEE38 /* LoginRegistrationModel.xcdatamodel */,
+			);
+			currentVersion = 883EBF232655A3F9004EEE38 /* LoginRegistrationModel.xcdatamodel */;
+			name = LoginRegistrationModel.xcdatamodeld;
+			path = Views/LoginRegistrationModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 883EBEFD265579D5004EEE38 /* Project object */;
 }
